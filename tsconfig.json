@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
     "target": "es5",
+    "paths": {
+      "redux-react": ["node_modules/react-redux/dist/react-redux"],
+    },
     "lib": [
       "dom",
       "dom.iterable",

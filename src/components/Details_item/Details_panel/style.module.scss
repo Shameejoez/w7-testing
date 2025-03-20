@@ -1,0 +1,40 @@
+.details_item__btn_panel {
+    height: 100%;
+    width: 110px;
+    visibility: hidden;
+    display: flex;
+   
+}
+
+.details_item__btn_wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #414144;
+    padding: 6px;
+    width: fit-content;
+    border-radius: 6px;
+    gap: 6px;
+
+    &:hover {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.details_item__btn {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+    &.edit {
+        width: 16px;
+        height: 16px;   
+        visibility: visible;   
+    }
+
+    &.delete {
+        width: 15px;
+        height: 13px;
+    }
+}

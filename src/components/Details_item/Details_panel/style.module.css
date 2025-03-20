@@ -1,0 +1,35 @@
+.details_item__btn_panel {
+  height: 100%;
+  width: 110px;
+  visibility: hidden;
+}
+
+.details_item__btn_wrapper {
+  display: flex;
+  background-color: #414144;
+  padding: 6px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 6px;
+  gap: 6px;
+}
+.details_item__btn_wrapper:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.details_item__btn {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.details_item__btn.edit {
+  width: 16px;
+  height: 16px;
+  visibility: visible;
+}
+.details_item__btn.delete {
+  width: 15px;
+  height: 13px;
+}/*# sourceMappingURL=style.module.css.map */

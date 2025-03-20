@@ -1,0 +1,28 @@
+
+
+.details__item {
+    display: flex;
+    width: 100%;
+    color: #FFFFFF;
+    border-top: 1px solid #414144;
+    flex-direction: column;
+}
+
+.details_item__content {
+    padding: 21px 6px;
+    width: 100%;
+    display: grid;
+    border: 1px solid #414144;
+    grid-template-columns: 110px 1fr 200px 200px 200px 200px;
+    
+    &.edit {
+        padding: 9.5px 6px;
+    }
+}
+
+.details__sub_list {
+    display: flex;
+    flex-direction: column;
+}
+
+

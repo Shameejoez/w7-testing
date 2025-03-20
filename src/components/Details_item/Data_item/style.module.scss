@@ -1,0 +1,20 @@
+/* обычное состояние с информацией */
+.details_item__data {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+
+/* инпут для редактироввания */
+.details_item__input_wrapper {
+    padding: 12px;
+}
+
+
+.details_item__write {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid #414144;
+    border-radius: 6px;
+    color: #FFFFFF  ;
+}

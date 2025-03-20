@@ -1,0 +1,258 @@
+
+
+.content__wrapper {
+    display: flex;
+
+}
+
+
+.header_panel {
+  
+}
+
+
+.header {
+    background-color: #27272A;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    border-bottom: 1px solid #414144 ;
+    color: #A1A1AA;
+}
+
+.header__nav_bar {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.header_bar {
+
+}
+
+.header_bar__list {
+    display: flex;
+
+    &.left_panel {
+        gap: 20px;
+    }
+
+    &.right_panel {
+        gap: 30px;
+    }
+}
+
+.header_bar__btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+}
+.header_bar__item {
+    font-family: "Roboto";
+    font-weight: 400;
+    display: none;
+    letter-spacing: 0;
+
+    ~ label {
+        position: relative;
+        color: #A1A1AA;
+        cursor: pointer;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0%;         
+            height: 2px;
+            transform: translate(-7.5%, 1px);
+            background-color: #FFFFFF;
+            bottom: -11px;
+        }
+    }
+
+    &:checked ~ label {
+        color: #FFFFFF;
+
+        &::before {          
+            width: 115%;
+        }
+    }
+}
+
+.left_side_bar {
+   
+    width: 240px;
+    height: 100vh;
+    background-color: #27272A;
+}
+.side_bar {
+
+}
+.side_bar__panel {
+    padding: 8px 20px;
+    font-weight: 400;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #A1A1AA;
+    border-bottom: 1px solid #414144;
+    line-height: 1;
+
+    .side_panel__item {    
+        display: none;
+        
+        &:checked ~ label {
+            &::after {         
+                transform: rotate(-180deg) translate(-13px, 40%);                
+            }
+        }
+    }
+
+    label {
+        cursor: pointer;
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        span {
+            font-size: 10px;
+        }
+
+        &::after {
+            right: 0;
+            position: absolute;
+            transform: translate(13px, -40%);
+            content: url('../static/Arrow_bottom.svg');
+        }
+    }
+
+}
+.side_bar__list {
+    display: block;
+    color: #FFFFFF;
+    font-size: 14px;
+    opacity: 1;
+    pointer-events: auto;
+
+    &.hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+/* радио сайдбара  */
+.side_bar__item {
+    height: 32px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    display: none;
+
+    &:checked ~ label {
+        background-color: #A1A1AA;
+    }
+
+    & ~ label {
+        display: inline-block;
+        color: inherit;
+        padding: 8px 0 8px 56px;
+        width: 100%;
+        cursor: pointer;
+        &:before {
+            transform: translateY(12%);
+            position: absolute;
+            left: 20px;
+            content: url('../static/side_bar_item_icon.svg');
+        }
+    }
+
+}
+
+
+/* страница деталей */
+
+
+
+.ditails { 
+    background-color: #202124;
+    width: 100%;
+    height: 100vh;
+
+}
+.details__title {
+
+}
+
+.details__header {
+   
+}
+.details__side_title {
+    background-color: #27272A;
+    height: 44px;
+    outline: 1px solid #414144;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-weight: normal;
+
+    span {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        width: fit-content;
+        outline: 1px solid #414144;
+        height: 100%;
+        padding: 0px 15px;
+    }
+}
+.details__data_params {
+    display: grid;   
+    grid-template-columns: 110px 1fr 200px 200px 200px 200px;
+    padding: 11px 22px;
+  
+}
+.details__data_items {
+    color: #A1A1AA;
+    box-sizing: border-box;
+    padding-left: 12px;
+}
+
+.details__body {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.details__item {
+    display: flex;
+    width: 100%;
+    color: #FFFFFF;
+    border-top: 1px solid #414144;
+   
+}
+
+
+.details__sub_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.details_item__item__btn_panel {
+    height: 100%;
+    width: 110px;
+}
+
+.details_item__btn_wrapper {
+    padding: 6px;
+}
+
+.details_item__btn {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+
+
+    &.edit {
+
+    }
+
+    &.delete {
+
+    }
+}
